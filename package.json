@@ -1,0 +1,49 @@
+{
+  "name": "microfrontend",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "engines": {
+    "node": ">=10.0.0"
+  },
+  "scripts": {
+    "start": "egg-scripts start --daemon --title=egg-server-egg",
+    "stop": "egg-scripts stop --title=egg-server-egg",
+    "dev": "egg-bin dev",
+    "debug": "egg-bin debug",
+    "test": "npm run lint -- --fix && npm run test-local",
+    "test-local": "egg-bin test",
+    "cov": "egg-bin cov",
+    "lint": "eslint .",
+    "ci": "npm run lint && npm run cov",
+    "autod": "autod"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/libbyyounh/microfrontend.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/libbyyounh/microfrontend/issues"
+  },
+  "homepage": "https://github.com/libbyyounh/microfrontend#readme",
+  "dependencies": {
+    "egg": "^2.26.0",
+    "egg-scripts": "^2.12.0",
+    "egg-view-ejs": "^2.0.0"
+  },
+  "devDependencies": {
+    "autod": "^3.1.0",
+    "autod-egg": "^1.1.0",
+    "egg-bin": "^4.14.1",
+    "egg-ci": "^1.13.1",
+    "egg-mock": "^3.25.0",
+    "eslint": "^6.8.0",
+    "eslint-config-egg": "^8.0.0",
+    "eslint-config-prettier": "^6.9.0",
+    "eslint-plugin-prettier": "^3.1.2",
+    "prettier": "^1.19.1"
+  }
+}
